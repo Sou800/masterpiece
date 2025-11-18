@@ -11,6 +11,10 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest # 実行環境
 
+    # ⬇️ このブロックを追加します
+    permissions:
+      contents: write # リポジトリへの書き込み権限を許可する
+
     steps:
       # 1. リポジトリのコードをチェックアウト
       - name: Checkout repository
