@@ -39,7 +39,7 @@ jobs:
       # [注意] GitHub Pagesのサブディレクトリにデプロイする場合
       # run: flutter build web --base-href /<リポジトリ名>/
       - name: Build Flutter Web
-        run: flutter build web --release
+        run: flutter build web --release --base-href /masterpiece/
 
       # 6. ビルド成果物 (build/web) をGitHub Pagesにデプロイ
       # 'peaceiris/actions-gh-pages' を使うと簡単
